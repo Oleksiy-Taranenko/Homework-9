@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-block2 {
+    width: 100%;
+    height: 1274px;
+}
+
+.tabs {
+    margin: 35px 240px 77px 240px;
+    height: 1162px;
+    position: relative;
+}
+
+.tab {
+    display: inline-block;
+}
+
+.tab-title {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px transparent;
+    border-bottom: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    color: #43b1d2;
+    cursor: pointer;
+}
+
+.tab-title:hover {
+    background: seashell;
+}
+
+.tab-title.mrt {
+    border: 2px solid #dee2e6;
+    border-bottom: none;
+    border-radius: 2px;
+    color: #494848;
+}
+
+.tab-input {
+    display: none;
+}
+
+.tab-content {
+    position: absolute;
+    border: 2px solid #dee2e6;
+    border-radius: 2px;
+    padding: 10px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.tab :checked+.tab-title {
+    position: relative;
+    background: white;
+    top: 2px;
+    z-index: 1;
+}
+
+.tab :checked~.tab-content {
+    display: block;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.clinic {
+    border: 3px solid #43b1d2;
+    width: 688px;
+    height: 284px;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.logo-clinics {
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.name-of-clinic {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    letter-spacing: 0.4px;
+    color: #494848;
+}
+
+.address-of-clinic {
+    position: absolute;
+    top: 75px;
+    right: 15px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: #43b1d2;
+}
+
+.info-clinic {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+}
+
+.phone-of-clinic {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.call-to-clinic {
+    position: absolute;
+    bottom: 16px;
+    right: 20px;
+    background: #37c3a8;
+    padding: 12px;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.button-all-cabinets {
+    margin: 55px 648px 50px;
+    padding: 10px 15px;
+    font-size: medium;
+    border: none;
+    border-radius: 3px;
+    background: #cbd4e6;
+    cursor: pointer;
+}
